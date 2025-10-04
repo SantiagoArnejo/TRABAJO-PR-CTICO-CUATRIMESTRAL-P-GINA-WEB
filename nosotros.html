@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nosotros</title>
+    <link rel="icon" href="IMG/Icon_Pag.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <div class="logo"><a href="index.html"><img src="IMG/logo_pag.png" alt="Icono de la página" width="50" height="50"></a></div>
+        <div id="nav-placeholder" class="navegacion"></div>
+        <script>
+            fetch('nav.html')
+                .then(response => response.text())
+                .then(data => {
+                document.getElementById('nav-placeholder').innerHTML = data;
+            });
+        </script>
+    </div>
+    <div class="quienes-container">
+        <div class="quienes-texto">
+            <h1>Quienes somos <br></h1>
+            <p>En Luz del Himalaya nacimos con un propósito simple: llevar a los hogares un pedacito de naturaleza que inspire paz, armonía y bienestar. Descubrimos en las lámparas de sal del Himalaya no solo un objeto decorativo, sino una forma de crear ambientes cálidos y llenos de energía positiva.<br> un emprendimiento joven que cree en los pequeños detalles que transforman espacios. Cada lámpara que ofrecemos es única, tallada a mano y con la esencia natural de las montañas del Himalaya.<br>compromiso es brindar productos que no solo iluminen, sino que también acompañen momentos de calma, equilibrio y conexión.</p>
+        </div>
+        <div class="quienes-imagen">
+        <img src="IMG/logo_img_grande.png"  />
+        </div>
+    </div>
+</body>
+</html>

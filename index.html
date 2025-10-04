@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luz del himalaya</title>
+    <link rel="icon" href="IMG/Icon_Pag.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <div class="logo"><a href="index.html"><img src="IMG/logo_pag.png" alt="Icono de la página" width="50" height="50"></a></div>
+        <div id="nav-placeholder" class="navegacion"></div>
+        <script>
+            fetch('nav.html')
+                .then(response => response.text())
+                .then(data => {
+                document.getElementById('nav-placeholder').innerHTML = data;
+            });
+        </script>
+    </div>
+   
+   <div class="carrusel">
+    <div class="carrusel-inner">
+        <img src="IMG/img_promo_2x1.png" alt="Imagen 1" class="carrusel-item active">
+        <img src="IMG/img_promo_primavera.png" alt="Imagen 2" class="carrusel-item">
+    </div>
+    <button class="carrusel-control prev">&#10094;</button>
+    <button class="carrusel-control next">&#10095;</button>
+   </div>
+
+   <script src="index.js"></script>
+</body>
+</html>
