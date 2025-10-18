@@ -7,10 +7,11 @@
     <link rel="icon" href="IMG/Icon_Pag.png">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Open+Sans&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 
 </head>
 <body>
-    <div class="header">
+    <header>
         <div class="logo"><a href="index.html"><img src="IMG/logo_pag.png" alt="Icono de la página" width="50" height="50"></a></div>
         <div id="nav-placeholder" class="navegacion"></div>
         <script>
@@ -20,15 +21,30 @@
                 document.getElementById('nav-placeholder').innerHTML = data;
             });
         </script>
+    </header>
+    <main>
+        <section>
+            <div class="quienes-container">
+                <div class="quienes-texto">
+                    <h1>Quiénes somos <br></h1>
+                    <p>En Luz del Himalaya nacimos con un propósito simple: llevar a los hogares un pedacito de naturaleza que inspire paz, armonía y bienestar. Descubrimos en las lámparas de sal del Himalaya no sólo un objeto decorativo, sino una forma de crear ambientes cálidos y llenos de energía positiva.<br> Un emprendimiento joven que cree en los pequeños detalles que transforman espacios. Cada lámpara que ofrecemos es única, tallada a mano y con la esencia natural de las montañas del Himalaya.<br>Compromiso es brindar productos que no solo iluminen, sino que también acompañen momentos de calma, equilibrio y conexión.</p>
+                </div>
+                <div class="quienes-imagen">
+                    <img src="IMG/logo_img_grande.png"  />
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+    <div class="redes">
+        <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.x.com/" target="_blank"><i class="fab fa-twitter"></i></a>
     </div>
-    <div class="quienes-container">
-        <div class="quienes-texto">
-            <h1>Quienes somos <br></h1>
-            <p>En Luz del Himalaya nacimos con un propósito simple: llevar a los hogares un pedacito de naturaleza que inspire paz, armonía y bienestar. Descubrimos en las lámparas de sal del Himalaya no solo un objeto decorativo, sino una forma de crear ambientes cálidos y llenos de energía positiva.<br> un emprendimiento joven que cree en los pequeños detalles que transforman espacios. Cada lámpara que ofrecemos es única, tallada a mano y con la esencia natural de las montañas del Himalaya.<br>compromiso es brindar productos que no solo iluminen, sino que también acompañen momentos de calma, equilibrio y conexión.</p>
-        </div>
-        <div class="quienes-imagen">
-        <img src="IMG/logo_img_grande.png"  />
-        </div>
-    </div>
+        <p>© 2025 Luz del Himalaya | Todos los derechos reservados</p>
+    </footer>
+
+    
 </body>
 </html>
