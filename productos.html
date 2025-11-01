@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>productos</title>
+    <link rel="icon" href="IMG/Icon_Pag.png">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo"><a href="index.html"><img src="IMG/logo_pag.png" alt="Icono de la página" width="50" height="50"></a></div>
+        <div id="nav-placeholder" class="navegacion"></div>
+        <script>
+            fetch('nav.html')
+                .then(response => response.text())
+                .then(data => {
+                document.getElementById('nav-placeholder').innerHTML = data;
+            });
+        </script>
+    </header>
+    <main>
+        <section class="productlist">
+            <article class="productitem">
+                <img src="IMG/lampclasica.png" alt="Lámpara de Sal del Himalaya">
+                <h3>Lámpara de Sal del Himalaya<br><br> </h3>
+                <p class="Precio">Precio: $25.00</p>
+                <button>Añadir al carrito</button>
+            </article>
+
+            <article class="productitem">
+                <img src="IMG/lampgrande.png" alt="Lámpara de Sal del Himalaya Grande">
+                <h3>Lámpara de Sal del Himalaya Grande</h3>
+                <p class="Precio">Precio: $40.00</p>
+                <button>Añadir al carrito</button>
+            </article>
+
+            <article class="productitem">
+                <img src="IMG/lampbasemadera.png" alt="Lámpara de Sal del Himalaya con Base de Madera">
+                <h3>Lámpara de Sal del Himalaya con Base de Madera</h3>
+                <p class="Precio">Precio: $30.00</p>
+                <button>Añadir al carrito</button>
+            </article>
+
+            <article class="productitem">
+                <img src="IMG/lampcorazon.png" alt="Lámpara de Sal del Himalaya en Forma de Corazón">
+                <h3>Lámpara de Sal del Himalaya en Forma de Corazón</h3>
+                <p class="Precio">Precio: $35.00</p>
+                <button>Añadir al carrito</button>
+            </article>
+            
+            <article class="productitem">
+                    <img src="IMG/lampled.png" alt="Lámpara de Sal del Himalaya con Luz LED">
+                    <h3>Lámpara de Sal del Himalaya con Luz LED</h3>
+                    <p class="Precio">Precio: $28.00</p>
+                    <button>Añadir al carrito</button>
+            </article>
+
+            <article class="productitem">
+                    <img src="IMG/luz rosa.png" alt="Lámpara de Sal del Himalaya Rosa">
+                    <h3>Lámpara de Sal del Himalaya Rosa</h3>
+                    <p class="Precio">Precio: $20.00</p>
+                    <button>Añadir al carrito</button>
+            </article>
+
+            <article class="productitem">
+                    <img src="IMG/lamparafria.png" alt="Lámpara de Sal del Himalaya fria">
+                    <h3>Lámpara de Sal del Himalaya con iluminacion Fria</h3>
+                    <p class="Precio">Precio: $45.00</p>
+                    <button>Añadir al carrito</button>
+            </article>
+
+        </section>
+
+    </main>
+    
+    <footer>
+    <div class="redes">
+        <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.x.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+    </div>
+        <p>© 2025 Luz del Himalaya | Todos los derechos reservados</p>
+    </footer>
+</body>
+</html>
