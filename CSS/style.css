@@ -245,13 +245,13 @@ header {
   padding: 20px 40px;
   font-size: 20px;
   text-decoration: none;
-  background-image: url(IMG/lampcorazon.png);
+  background-image: url(../IMG/lampcorazon.png);
   background-size: cover;
   background-position: center;
   transition: color 0.3s ease;
 }
 .btn:hover {
-  background-image: url(IMG/lampled.png);
+  background-image: url(../IMG/lampled.png);
   color: #ffa07a;
 }
 
