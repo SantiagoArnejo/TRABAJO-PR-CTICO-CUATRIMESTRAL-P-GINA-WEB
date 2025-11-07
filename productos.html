@@ -11,7 +11,7 @@
 </head>
 <body>
     <header>
-        <div class="logo"><a href="index.html"><img src="IMG/logo_pag.png" alt="Icono de la página" width="50" height="50"></a></div>
+        <div class="logo"><a href="index.html"><img src="IMG/nuevo_logo_lb.png" alt="Icono de la página" width="50" height="50"></a></div>
         <div id="nav-placeholder" class="navegacion"></div>
         <script>
             fetch('nav.html')
@@ -25,51 +25,63 @@
         <section class="productlist">
             <article class="productitem">
                 <img src="IMG/lampclasica.png" alt="Lámpara de Sal del Himalaya">
-                <h3>Lámpara de Sal del Himalaya<br><br> </h3>
+                <h3>Lámpara de Sal del Himalaya<br><br></h3>
                 <p class="Precio">Precio: $25.00</p>
-                <button>Añadir al carrito</button>
+                <button data-id="1" data-nombre="lampclasica" data-precio="25.00">Añadir al carrito</button>
             </article>
 
             <article class="productitem">
                 <img src="IMG/lampgrande.png" alt="Lámpara de Sal del Himalaya Grande">
                 <h3>Lámpara de Sal del Himalaya Grande</h3>
                 <p class="Precio">Precio: $40.00</p>
-                <button>Añadir al carrito</button>
+                <button data-id="2" data-nombre="lampgrande" data-precio="40.00">
+                    Añadir al carrito
+                </button>
             </article>
 
             <article class="productitem">
                 <img src="IMG/lampbasemadera.png" alt="Lámpara de Sal del Himalaya con Base de Madera">
                 <h3>Lámpara de Sal del Himalaya con Base de Madera</h3>
                 <p class="Precio">Precio: $30.00</p>
-                <button>Añadir al carrito</button>
+                <button data-id="3" data-nombre="lampbasemadera" data-precio="30.00">
+                    Añadir al carrito
+                </button>
             </article>
 
             <article class="productitem">
                 <img src="IMG/lampcorazon.png" alt="Lámpara de Sal del Himalaya en Forma de Corazón">
                 <h3>Lámpara de Sal del Himalaya en Forma de Corazón</h3>
                 <p class="Precio">Precio: $35.00</p>
-                <button>Añadir al carrito</button>
+                <button data-id="4" data-nombre="lampcorazon" data-precio="35.00">
+                    Añadir al carrito
+                </button>
             </article>
             
             <article class="productitem">
                     <img src="IMG/lampled.png" alt="Lámpara de Sal del Himalaya con Luz LED">
                     <h3>Lámpara de Sal del Himalaya con Luz LED</h3>
                     <p class="Precio">Precio: $28.00</p>
-                    <button>Añadir al carrito</button>
+                    <button data-id="5" data-nombre="lampled" data-precio="28.00">
+                        Añadir al carrito
+                    </button>
             </article>
 
             <article class="productitem">
                     <img src="IMG/luz rosa.png" alt="Lámpara de Sal del Himalaya Rosa">
                     <h3>Lámpara de Sal del Himalaya Rosa</h3>
                     <p class="Precio">Precio: $20.00</p>
-                    <button>Añadir al carrito</button>
+                    <button data-id="6" data-nombre="luzrosa" data-precio="20.00">
+                        Añadir al carrito
+                    </button>
             </article>
 
             <article class="productitem">
                     <img src="IMG/lamparafria.png" alt="Lámpara de Sal del Himalaya fria">
                     <h3>Lámpara de Sal del Himalaya con iluminacion Fria</h3>
                     <p class="Precio">Precio: $45.00</p>
-                    <button>Añadir al carrito</button>
+                    <button data-id="7" data-nombre="lamparafria" data-precio="45.00">
+                        Añadir al carrito
+                    </button>
             </article>
 
         </section>
@@ -84,5 +96,7 @@
     </div>
         <p>© 2025 Luz del Himalaya | Todos los derechos reservados</p>
     </footer>
+    <script src="https://kit.fontawesome.com/tu-codigo.js"></script>
+    <script src="index.js"></script>
 </body>
 </html>
